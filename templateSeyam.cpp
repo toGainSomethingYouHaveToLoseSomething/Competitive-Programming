@@ -13,6 +13,7 @@ bool cmp(pair<int,int> a, pair<int,int> b){
   else return a.second > b.second;
   //call
   // sort(vec.begin(),vec.end(),cmp);
+  //priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(&cmp)> pq(cmp); 
 }
 
 

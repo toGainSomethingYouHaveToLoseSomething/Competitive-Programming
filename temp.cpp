@@ -6,6 +6,16 @@ using namespace std;
 const ll MOD = 1e9+9;
 
 
+bool cmp(pair<int,int> a, pair<int,int> b){
+  // first ascending, second descending
+  if(a.first != b.first) return a.first < b.first;
+  else return a.second > b.second;
+  //call
+  // sort(vec.begin(),vec.end(),cmp);
+  ////priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(&cmp)> pq(cmp); 
+}
+
+
 ll gcd(ll a,ll b){
     if(b==0) return a;
     return gcd(b,a%b);
