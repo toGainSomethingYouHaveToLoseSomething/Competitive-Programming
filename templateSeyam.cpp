@@ -7,6 +7,14 @@ using namespace std;
 #define endl "\n"
 const ll MOD = 1e9+9;
 
+bool cmp(pair<int,int> a, pair<int,int> b){
+  // first ascending, second descending
+  if(a.first != b.first) return a.first < b.first;
+  else return a.second > b.second;
+  //call
+  // sort(vec.begin(),vec.end(),cmp);
+}
+
 
 
 
