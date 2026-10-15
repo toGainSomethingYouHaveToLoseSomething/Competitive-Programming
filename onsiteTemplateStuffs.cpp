@@ -1,6 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+bool cmp(pair<int,int> a, pair<int,int> b){
+  // first ascending, second descending
+  if(a.first != b.first) return a.first < b.first;
+  else return a.second > b.second;
+
+  //call
+  // sort(vec.begin(),vec.end(),cmp);
+}
+
+
 int main(){
   //tuple declaration and access;
   tuple <int,string,char> person(20,"lala",'a'); // can be added more
@@ -27,4 +37,7 @@ int main(){
   // nested vector with size
   int row,col;
   vector<vector<int>> v(row,vector<int>(col));
+
+  priority_queue<int> max_heap;
+  priority_queue<int, vector<int>, greater<int>> min_heap;
 }
