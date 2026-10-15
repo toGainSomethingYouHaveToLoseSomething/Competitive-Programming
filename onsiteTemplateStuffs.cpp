@@ -18,4 +18,13 @@ int main(){
 
   vector<pair<pair<int,int>,int>> nestedPair;
   nestedPair.push_back({{1,2},3});
+
+
+  // nested vector
+  int row; //n
+  vector<vector<int>> v(row);
+
+  // nested vector with size
+  int row,col;
+  vector<vector<int>> v(row,vector<int>(col));
 }
