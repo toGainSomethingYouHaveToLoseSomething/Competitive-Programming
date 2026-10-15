@@ -1,10 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool cmp(pair<int,int> a, pair<int,int> b){
+// bool cmp(pair<int,int> a, pair<int,int> b){
   // first ascending, second descending
-  if(a.first != b.first) return a.first < b.first;
-  else return a.second > b.second;
+  // if(a.first != b.first) return a.first < b.first;
+  // else return a.second > b.second;
+// }
+
+bool cmp(pair<int,int> a, pair<int,int> b){
+  // first descending , second ascending
+  if(a.first != b.first){
+    if(a.first > b.first) return true;
+    else return false;
+  }
+  else{
+    if(a.second < b.second) return true;
+    else return false;
+  }
 }
 
 int main(){
